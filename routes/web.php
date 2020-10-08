@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layout');
-});
+// Route::get('/', function () {
+//     return view('layout');
+// });
+// frontend########################################################################
+Route::get('/','HomeController@index');
+
+
+
+
+
+
+
+
+
+// Backend#########################################################
+Route::get('/admin','AdminController@index');
