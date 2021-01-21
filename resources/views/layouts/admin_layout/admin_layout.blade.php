@@ -9,7 +9,7 @@
   <!-- Font Awesome -->
 <link rel="stylesheet" href="{{url('plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')}}">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bbootstrap 4 -->
 <link rel="stylesheet" href="{{url('plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
   <!-- iCheck -->
@@ -27,19 +27,16 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
+
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
-    <!-- include headeer file -->
-@include('layout.admin_layout.admin_header')
+@include('layouts.admin_layout.admin_header')
 
- <!-- include sidebar file -->
-@include('layout.admin_layout.admin_sidebar')
+@include('layouts.admin_layout.admin_sidebar')
 
+@yield('content')
 
- @yield('content')
-
- <!-- include Footer file -->
- @include('layout.admin_layout.admin_footer')
+@include('layouts.admin_layout.admin_footer')
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

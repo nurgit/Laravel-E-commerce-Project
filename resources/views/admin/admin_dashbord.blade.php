@@ -1,5 +1,6 @@
- @extends('layout.admin_layout.admin_layout')
+ @extends('layouts.admin_layout.admin_layout')
  @section('content')
+
  <!-- Content Wrapper. Contains page content -->
  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -611,3 +612,4 @@
     <!-- /.content -->
   </div>
 <!-- /.content-wrapper -->
+@endsection
