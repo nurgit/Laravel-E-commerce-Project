@@ -1,1 +1,8 @@
-check git 
+
+
+#5--
+---add migration file 
+php artisan make:migratin create_admin_table
+
+---create table frome migratin file
+php artisan migrate
